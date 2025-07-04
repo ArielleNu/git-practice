@@ -1,32 +1,205 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <header>
-            <h1>Arielle Nudelman</h1>
-            <p>Aspiring Software Engineer</p>
-        </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arielle Nudelman | About Me</title>
 
-        <section>
-            <h2>About Me</h2>
-            <p>I am a rising sophomore at Cornell University in Ithaca, New York.
-                I am pursuing a Bachelor of Science in Computer Science in the College 
-                of Engineering. I am also considering minors in AI and Game Design. I 
-                grew up in New York City, specifically in Brooklyn, but went to high
-                school at Stuyvesant High School in Manhattan. I have always had a 
-                passion for computer science, and specifically for software engineering.
-                I am very interested in web and mobile development, but am always eager
-                to explore new areas of the field. Outside of tech, I enjoy watching
-                movies, listening to music, trying new restaurants, traveling, and 
-                playing tennis!
-            </p>
-        </section>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Delius&family=Glegoo:wght@400;700&display=swap" rel="stylesheet" />
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email: ariellenudelman2@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/arielle-nudelman">https://www.linkedin.com/in/arielle-nudelman</a></p>
-            <p>GitHub: <a href="https://github.com/ArielleNu">https://github.com/ArielleNu</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/arielle.n_/">https://www.instagram.com/arielle.n_/</a></p>
-        </section>
-    </body>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation & Header -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">About Me</div>
+      <ul class="nav-links">
+        <li><a href="#about">Overview</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#fun-facts">Fun Facts</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#links">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-container">
+      <h1>Arielle Nudelman</h1>
+      <p>Aspiring Software Engineer</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>A Quick Overview</h2>
+      <p>
+        I am a rising sophomore at Cornell University in Ithaca, New York. I am pursuing a Bachelor of Science in 
+        Computer Science in the College of Engineering. I am also considering minors in AI and Game Design. I 
+        grew up in New York City, specifically in Brooklyn, but went to high school at Stuyvesant High School 
+        in Manhattan. I have always had a passion for computer science, and specifically for software engineering. 
+        I am very interested in web and mobile development, but am always eager to explore new areas of the field. 
+        Outside of tech, I enjoy watching movies, listening to music, trying new restaurants, traveling, and playing 
+        tennis!
+      </p>
+    </section>
+
+    <!-- Tech Journey Section -->
+    <section class="journey" id="journey">
+      <h2>My Tech Journey</h2>
+      <div class="journey-buttons">
+        <button class="primary-btn" data-popup="popup-middle">Middle School</button>
+        <button class="primary-btn" data-popup="popup-high">High School</button>
+        <button class="primary-btn" data-popup="popup-college">College</button>
+      </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section class="fun-facts" id="fun-facts">
+      <h2>Fun Facts</h2>
+      <div class="facts-grid">
+        <div class="fact-card">My favorite color is pink (if you couldn't tell) !</div>
+        <div class="fact-card">I have been to a One Direction concert!</div>
+        <div class="fact-card">I have been to 16 countries!</div>
+        <div class="fact-card">I have a twin brother!</div>
+        <div class="fact-card">My favorite food is Turkish chicken shish kebabs!</div>
+        <div class="fact-card">I love bananas!</div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <h2>Me in Pictures</h2>
+      <h3>Click an image to view my whole gallery!</h3>
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Previous image">&#10094;</button>
+        <div class="carousel-track">
+          <img src="images/flowers.jpeg" class="carousel-slide" alt="Carousel image 1" data-section="me" />
+          <img src="images/beach.jpeg" class="carousel-slide" alt="Carousel image 2" data-section="me" />
+          <img src="images/ferriswheel.jpeg" class="carousel-slide" alt="Carousel image 3" data-section="travel" />
+        </div>
+        <button class="carousel-btn next" aria-label="Next image">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Contact Links -->
+    <section class="links" id="links">
+      <h2>Connect with Me</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/arielle-nudelman" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/arielle.n_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="mailto:ariellenudelman2@gmail.com"><i class="fas fa-envelope"></i> Email Me</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made in 2025 by Arielle Nudelman</p>
+  </footer>
+
+  <!-- Journey Popups -->
+  <div id="popup-middle" class="popup journey-popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h3>Middle School</h3>
+      <p>I received my first computer, a Toshiba laptop, in elementary school. Aside from playing around with Scratch, my mom 
+        signed me up for some coding practice on Tynker and that is when I first realized coding is fun! I would spend days
+        leading up to my family members' birthdays making them games on Tynker. It was something original that I could create
+        and share with them, and I loved it! This led way to middle school where we had so-called talents that we had to try
+        out for to get into the school. I tried out for the computer-math talent and got in! This was when I took my first real
+        coding classes. In 6th grade we mostly played around with SketchUp, a 3D modeling program, and flight simulators. In
+        7th grade, it was all about robotics and we used Arduino. Then in 8th grade, that's when HTML, CSS, Python, and Photoshop
+        came into play. Even though part of the school year was online due to the COVID pandemic, I learned so much about web
+        development that year and really enjoyed it.</p>
+    </div>
+  </div>
+
+  <div id="popup-high" class="popup journey-popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h3>High School</h3>
+      <p>During my time at Stuyvesant, I spent time during both the school year and the summer working on computer science. During freshman 
+        year, I took an online javascript course from Johns Hopkins University about interactive web development. I learned so much about
+        HTML, CSS, and JavaScript that year and it really solidified my interest in web development. Then during the next school year (my 
+        sophomore year), I took Annual Intro to CS, which went into Dr. Racket, Netlogo, and Python. During the summer after freshman 
+        year I joined the KWK community when I participated in the iOS Mobile Application Development summer camp. This was truely such a 
+        unique experience and only solified my appreciation for software development by introducing me to the world of app development. I 
+        took AP Computer Science A during my junior year, where I learned Java and object-oriented programming. I also took part in a 
+        Google Mentorship program where I worked in a group of 3 other students and one mentor from Google on a project, ours being a website
+        that primarily relied on React. After junior year, I participated in a three-week program at Columbia Univeristy where I learned 
+        about data science using Python and machine learning principles. Unfortunately, during my senior year, the programming office didn't 
+        place me in any computer science classes, but I was really happy with how much I learned during my time at Stuyvesant. 
+      </p>
+    </div>
+  </div>
+
+  <div id="popup-college" class="popup journey-popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h3>College</h3>
+      <p>At Cornell Engineering, I came in as a prospective computer science major. After countless college tours, I settled with Cornell 
+        University as my top choice specifically because of its strong computer science program and unique classes. During my first 
+        semester I took CS 1998 - Introduction to iOS Mobile Development, a student-led class that taught us both UI Kit and SwiftUI,
+        delving into frontend development, backend integration, and Figma design integration. Second semester I took CS 2110 - 
+        Object-Oriented Programming and Data Structures, which utilized Java as the primary language. During my freshman year, I also
+        took on a campus job as a student web developer for a professor within the Linguistics department, where I worked on a website 
+        for his research utilizing HTML, CSS, and JavaScript. I also joined the technical computer of WICC (Women in Computing at Cornell),
+        where I worked on a project to create a website for the organization using React and aided in creating and conducting a Git 
+        presentation for the club. After completing my first year, I was already able to apply for affiliation with the computer science
+        major and got accepted! During the summer after my freshman year, I moved across the country to Seattle, Washington for an 
+        internship at Amazon as a software development engineer intern on the alerting mobile team. I would have never found my love
+        for mobile development if it weren't for Kode with Klossy, and I am so grateful for that! 
+      </p>
+    </div>
+  </div>
+
+  <!-- Gallery Popup -->
+  <div id="gallery-popup" class="popup">
+    <div class="popup-content grid-popup">
+      <span class="close-btn close-gallery">&times;</span>
+      <div class="gallery-container">
+        <button id="sidebar-toggle" aria-label="Toggle sections">&#9776;</button>
+        <aside class="sidebar" id="sidebar">
+          <ul>
+            <li data-section="all" class="active">All Photos</li>
+            <li data-section="travel">Travel</li>
+            <li data-section="food">Food</li>
+            <li data-section="me">Me</li>
+            <li data-section="nyc">NYC</li>
+          </ul>
+        </aside>
+        <div class="photo-grid" id="photo-grid">
+          <!-- Gallery Image URLs -->
+          <img src="images/ferriswheel.jpeg" alt="Gallery image 1" data-section="travel" />
+          <img src="images/garden.jpeg" alt="Gallery image 2" data-section="me" />
+          <img src="images/flowers.jpeg" alt="Gallery image 3" data-section="me" />
+          <img src="images/nycboat.jpeg" alt="Gallery image 4" data-section="nyc" />
+          <img src="images/sunset.jpeg" alt="Gallery image 5" data-section="nyc" />
+          <img src="images/beach.jpeg" alt="Gallery image 6" data-section="me" />
+          <img src="images/needle.jpeg" alt="Gallery image 7" data-section="travel" />
+          <img src="images/cafe.jpeg" alt="Gallery image 8" data-section="me" />
+          <img src="images/emily.jpeg" alt="Gallery image 9" data-section="travel" />
+          <img src="images/icecream.jpeg" alt="Gallery image 10" data-section="travel" />
+          <img src="images/prom.jpeg" alt="Gallery image 11" data-section="me" />
+          <img src="images/skyline.jpeg" alt="Gallery image 12" data-section="me" />
+          <img src="images/dumbo.jpeg" alt="Gallery image 13" data-section="nyc" />
+          <img src="images/smiley.jpeg" alt="Gallery image 14" data-section="food" />
+          <img src="images/posty.jpeg" alt="Gallery image 15" data-section="travel" />
+          <img src="images/breakfast1.jpeg" alt="Gallery image 16" data-section="food" />
+          <img src="images/breakfast2.jpeg" alt="Gallery image 17" data-section="food" />
+          <img src="images/breakfast3.jpeg" alt="Gallery image 18" data-section="food" />
+          <img src="images/breakfast4.jpeg" alt="Gallery image 19" data-section="food" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
 </html>
